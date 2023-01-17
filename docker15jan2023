@@ -1,0 +1,24 @@
+DOCKER: 15 jan 2023
+
+What is docker?
+docker file (contains all code,configs,libraries,packages etc used in any project/app)
+docker image (Built version of docker file)
+docker container (running version of the docker image)
+https://hub.docker.com/
+https://docs.docker.com/
+https://labs.play-with-docker.com/
+
+
+
+commands:
+docker --version
+docker pull imgname
+docker image ls
+docker run imgname or imgid -> initiates a container
+docker rm imgname or imgid -> removes a container
+docker rmi imgname or imgid -> removes a image
+docker ps -> shows running containers
+clear
+docker ps -a
+docker rm $(docker ps -a -q) -> removes all running container on one go
+docker ps -a -q -> gives container id for all running containers
