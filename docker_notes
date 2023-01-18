@@ -1,0 +1,53 @@
+DOCKER: 
+--15 jan 2023
+
+What is docker?
+docker file (contains all code,configs,libraries,packages etc used in any project/app)
+docker image (Built version of docker file)
+docker container (running version of the docker image)
+https://hub.docker.com/
+https://docs.docker.com/
+https://labs.play-with-docker.com/
+https://dockerlabs.collabnix.com/docker/cheatsheet/
+
+
+commands:
+docker --version
+docker pull imgname
+docker image ls
+docker run imgname or imgid -> initiates a container, runs an image, pulls and runs an image if the image is not present locally
+docker rm imgname or imgid -> removes a container
+docker rmi imgname or imgid -> removes a image
+docker ps -> shows running containers
+clear,cls
+docker ps -a -> shows all container (state does not matter : running/stop)
+docker rm $(docker ps -a -q) -> removes all running container on one go
+docker ps -a -q -> gives container id for all running containers
+
+-------------------------------------------------------------------------------------------------------------------------------------
+--16 jan 2023
+docker pull imgname:version(By default is latest)
+docker run imgname or imgid 
+docker ps
+docker stop containerid
+cls
+
+docker run --name customname -P imgname:version -> gives custom name to an image
+docker run -p desiredportnumber:defaultportnumber imgname -> port mapping (container runs on our custom mapped port number)
+defaultportnumber: 8080
+desiredportnumber: 9000,9001
+verify using browser -> localhost:desiredportnumber
+cat index.html -> code of browser content
+
+docker logs containerid/containername
+
+to be continue...
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+--17 jan 2023
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
