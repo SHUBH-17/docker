@@ -39,9 +39,24 @@ desiredportnumber: 9000,9001
 verify using browser -> localhost:desiredportnumber
 cat index.html -> code of browser content
 
-docker logs containerid/containername
 
-to be continue...
+--debugging
+docker logs containerid/containername
+docker exec -it contaierid bash(or any other terminal type) (it -> interactive terminal) : enters into terminal
+ls (list out files in the dir)
+cd .. (previous dir)
+cat filename -> reads the file
+exit -> exit from terminal
+--debugging
+
+--Creating a docker file for any application:
+given : python flask application (app.py : timer app) and requirement.txt(written flask in it)
+open VS code 
+go to terminal
+touch Dockerfile (D should be capital) -> write docker code here
+docker build -t imgname:versionname directory -> builds an image in the mentioned dir with the given imgname
+
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------
